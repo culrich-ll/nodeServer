@@ -1,0 +1,13 @@
+{
+  "name": "node-restify",
+  "version": "0.0.1",
+  "description": "Node.js example illustrating how to write a RESTful API using the node-restify library.",
+  "dependencies": {
+    "restify": "2.6.0"
+  },
+  "engine": "node 0.6.x",
+  "scripts": {
+    "test": "karma start"
+  },
+  "author": "logicline GmbH"
+}
