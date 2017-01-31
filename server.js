@@ -59,6 +59,7 @@ server.listen(80, function () {
   console.log('%s listening at %s', server.name, server.url);
 });
 
+/*
 // Client
 var client = restify.createJsonClient({
   url: 'http://localhost:80',
@@ -89,3 +90,4 @@ client.post('/user', { name: "John Doe" }, function (err, req, res, obj) {
     });
   });
 });
+*/
