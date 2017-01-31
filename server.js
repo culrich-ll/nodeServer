@@ -55,13 +55,13 @@ server.del('/user/:id', function (req, res, next) {
   return next();
 });
 
-server.listen(8090, function () {
+server.listen(80, function () {
   console.log('%s listening at %s', server.name, server.url);
 });
 
 // Client
 var client = restify.createJsonClient({
-  url: 'http://localhost:8090',
+  url: 'http://localhost:80',
   version: '~1.0'
 });
 
