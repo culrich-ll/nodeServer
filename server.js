@@ -55,7 +55,7 @@ server.del('/user/:id', function (req, res, next) {
   return next();
 });
 
-server.listen(80, function () {
+server.listen(8090, function () {
   console.log('%s listening at %s', server.name, server.url);
 });
 
