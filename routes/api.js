@@ -1,5 +1,3 @@
-  var restify = require('restify');
-  var cluster = require('cluster');
   // State
   var next_user_id = 0;
   var users = {};

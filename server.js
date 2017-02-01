@@ -24,11 +24,18 @@ else {
     version: '1.0.0'
   });
 
-  var routes = require('./routes/routes')(server);
+  var api = require('./routes/api');
 
   server.use(restify.acceptParser(server.acceptable));
   server.use(restify.queryParser());
+  server.use(restify.fullResponse());
   server.use(restify.bodyParser());
+
+  server.get("/", api.getalluser);
+  server.get('/user/:id', api.getuser);
+  server.post('/user', api.createuser);
+  server.put('/user/:id', api.changeuser);
+  server.del('/user/:id', api.deletuser);
 
   server.listen(port, function () {
     console.log('Worker %s spawned for port %s.', cluster.worker.id, port);
