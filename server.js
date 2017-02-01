@@ -36,7 +36,6 @@ else {
     res.writeHead(200, {'Content-Type': 'application/json; charset=utf-8'});
     res.end(JSON.stringify(users));
     console.log('Worker: '+ cluster.worker.id);
-    cluster.worker.kill();
     return next();
   });
 
