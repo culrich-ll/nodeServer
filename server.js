@@ -6,6 +6,8 @@ var restify = require('restify');
 var next_user_id = 0;
 var users = {};
 
+var port = process.env.PORT || 8090;
+
 // Server
 var server = restify.createServer({
   name: 'nodeRestify',
@@ -55,7 +57,7 @@ server.del('/user/:id', function (req, res, next) {
   return next();
 });
 
-server.listen(8090, function () {
+server.listen(port, function () {
   console.log('%s listening at %s', server.name, server.url);
 });
 
