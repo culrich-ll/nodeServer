@@ -1,5 +1,3 @@
-// You'll see the client-side's output on the console when you run it.
-
 var restify = require('restify');
 
 // State
@@ -63,6 +61,8 @@ server.listen(port, function () {
 
 /*
 // Client
+// You'll see the client-side's output on the console when you run it.
+
 var client = restify.createJsonClient({
   url: 'http://localhost:80',
   version: '~1.0'
