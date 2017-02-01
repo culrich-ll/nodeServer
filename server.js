@@ -1,4 +1,5 @@
 var cluster = require('cluster');
+
 if (cluster.isMaster)
 {
   console.log('Server is active. Forking workers now.');
